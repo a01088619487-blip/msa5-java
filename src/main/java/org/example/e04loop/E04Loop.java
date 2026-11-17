@@ -20,7 +20,7 @@ public class E04Loop {
             System.out.println(i);
             for (int z = 0; z < 5; z++){
                 System.out.print(z);
-                //System.out.printf("i값: %d, z값: %d%n",i,z);
+                System.out.printf("i값: %d, z값: %d%n",i,z);
             }// 0,01234 -> 1,01234
             System.out.println();
         }
@@ -33,10 +33,14 @@ public class E04Loop {
         // ...          // ...
         // 9 X 8 = 72
         // 9 X 9 = 81
-
-
-
-
+        String gugu = "";
+        for (int num= 2 ; num < 10; num++){
+                if (num == 2){
+                     gugu = "구구단 2단" ;
+                    int i =  1++ ;
+                }
+            System.out.println(gugu,"%d *",num);
+        }
 
     }
 }

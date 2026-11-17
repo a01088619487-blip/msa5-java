@@ -1,6 +1,6 @@
 package org.example.e03if;
 
-public class E03Id {
+public class E03If {
     public static void main(String[] args) {
 
 

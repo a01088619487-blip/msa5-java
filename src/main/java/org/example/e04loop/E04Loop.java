@@ -33,17 +33,39 @@ public class E04Loop {
         // ...          // ...
         // 9 X 8 = 72
         // 9 X 9 = 81
-        String gugu = "";
-        for (int num= 2 ; num < 10; num++){
-                if (num == 2){
-                     gugu = "구구단 2단" ;
-                    int i =  1++ ;
-                }
-            System.out.println(gugu,"%d *",num);
+
+        for (int i = 2; i <= 9; i++) {
+            System.out.printf("%d단%n", i);
+            for (int j = 1; j <= 9; j++) {
+                System.out.println(i + " x " + j + " = " + (i * j));
+            }
+            System.out.println();
         }
+
+        // 내가 만들고 싶은거  if문
+        int i = 2; // 2단
+        int j = 1; // 곱셈
+
+        while (i <= 9){
+            if (j == 1){
+                System.out.println(i + "단");
+            }
+            System.out.println(i + " x " + j + " = " + (i * j));
+            j++;
+            if ( j >9 ){
+                j = 1;
+                i++;
+                System.out.println();
+            }
+        }
+        //경은님 버전
+//        for(int i = 2; i < 10; i++){
+//            System.out.println(" " + i + "단 ");
+//            for(int j = 1; j < 10; j++){
+//                System.out.println(i + " * " + j + " = " + (i * j));
+//            }
+//            System.out.println("================================");
+//        }
 
     }
 }
-
-
-
